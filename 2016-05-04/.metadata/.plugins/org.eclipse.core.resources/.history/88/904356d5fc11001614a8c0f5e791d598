@@ -1,0 +1,13 @@
+
+public class Janelas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Janelas!");
+		return 0;
+	}
+
+	public int area(){
+		return 0;
+	}
+}

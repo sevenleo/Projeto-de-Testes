@@ -1,0 +1,44 @@
+Colisoes
+=========================
+
+Verificar colisao entre 2 retângulos
+
+Entrada: x0, x1, y0, y1 de cada retângulo ( 8 inteiros )
+
+Saída:  1, se houver colisão 
+	      0, caso contrário
+
+
+
+Caracteristicas
+======================
+	valores validos:
+		xi1 > xi0
+		yi1 > yi0 
+		// 0 <= xi,yi <= 10^6
+
+	funcionalidade:
+		colidem/tangentes			
+		colidem/retangulos iguais	
+		colidem/outros				
+		não colidem					
+	
+	
+Blocos	
+======================
+colidem/tangentes			[T/F]
+colidem/retangulos iguais	[T/F]
+colidem outros				[T/F]
+não colidem					[T/F]
+
+
+Testes
+======================
+R1x0=R2x0 R1x1=R2x1 R1y0=R2y0 R1y1=R2y1 	(colidem/retangulos iguais)
+
+R1x0 < R2x0 & 	R1x1 > R2x0 & 	R1y1 > R2y0 &	R1Y0 < R2y0	(colidem/outros)
+
+R1x0 = R2x0 & ( R1y0 <= R2y0 & R1y1 >= R2y0 || R1y0 <= R2y1 & R1y1 >= R2y1 ) (colidem/tangentes em x)
+
+
+

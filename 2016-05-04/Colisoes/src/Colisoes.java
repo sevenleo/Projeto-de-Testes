@@ -1,0 +1,15 @@
+
+public class Colisoes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Janelas!");
+	}
+	
+	public static int predef = 0;
+	
+	public static int area(){
+		if (predef !=0) return predef;
+		return 0;
+	}
+}

@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+import junit.framework.Assert;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class testes {
+	
+	@Before
+	
+
+	@Test
+	Janelas.predef=10;
+	public void JanelasFechadas() {
+		
+		assertEquals(10,Janelas.area());
+		
+		//fail("Not yet implemented");
+	}
+}
