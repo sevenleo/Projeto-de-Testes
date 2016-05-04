@@ -20,7 +20,7 @@ Caracteristicas
 	funcionalidade:
 		colidem/tangentes			
 		colidem/retangulos iguais	
-		colidem/outros				
+		colidem/parcial				
 		não colidem					
 	
 	
@@ -28,17 +28,44 @@ Blocos
 ======================
 colidem/tangentes			[T/F]
 colidem/retangulos iguais	[T/F]
-colidem outros				[T/F]
+colidem parcial				[T/F]
 não colidem					[T/F]
+
+ou
+
+[nao colidem / tangentes / iguais / parcial]
+
+
+Criterio de Combinacao
+======================
+Each Choice
+
+
+Requisitos
+======================
+TR = {nao colidem, tangentes, iguais, parcial }
 
 
 Testes
 ======================
+
+0 0 2 2 
+3 3 4 4 
+saida 0 (nao colidem)
+
+
+0 0 1 1
+0 0 2 2
+saida 1
+
+
+
+Testes
+======================
+
 R1x0=R2x0 R1x1=R2x1 R1y0=R2y0 R1y1=R2y1 	(colidem/retangulos iguais)
 
-R1x0 < R2x0 & 	R1x1 > R2x0 & 	R1y1 > R2y0 &	R1Y0 < R2y0	(colidem/outros)
+R1x0 < R2x0 & 	R1x1 > R2x0 & 	R1y1 > R2y0 &	R1Y0 < R2y0	(colisao parcial)
 
 R1x0 = R2x0 & ( R1y0 <= R2y0 & R1y1 >= R2y0 || R1y0 <= R2y1 & R1y1 >= R2y1 ) (colidem/tangentes em x)
-
-
 
